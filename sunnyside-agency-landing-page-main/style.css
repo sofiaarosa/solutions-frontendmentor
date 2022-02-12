@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;900&family=Fraunces:wght@700;900&display=swap");
+
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-des-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-m-cyan: hsl(168, 34%, 41%);
+
+  --very-dark-des-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  -dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: url(./images/desktop/image-header.jpg);
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+}
+
+header nav {
+  padding: 2vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav h1, footer h1 {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+header nav .links, footer .links {
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+header nav .links a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+header nav .links .contact {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 12px 20px;
+  background-color: var(--white);
+  color: black;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+header nav .links .contact:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--white);
+}
+
+header .title {
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+  justify-content: center;
+  font-family: "Fraunces", serif;
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: var(--white);
+}
+
+header .title svg {
+  transform: scale(0.7);
+}
+
+main {
+  width: 100%;
+}
+
+main .row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+main .row img {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+main .row .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .row .col .text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+}
+
+main .row .col h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--very-dark-des-blue);
+}
+
+main .row .col p {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: var(--very-dark-grayish-blue);
+}
+
+main .row .col a {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 15px;
+  text-decoration: underline 7px solid rgba(250, 212, 0, 0.3);
+  text-underline-offset: -4px;
+  color: var(--very-dark-des-blue);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#lm1 {
+  text-decoration-color: rgba(250, 212, 0, 0.3);
+  transition: 0.3s;
+}
+
+#lm1:hover {
+  text-decoration-color: rgba(250, 212, 0, 1);
+}
+
+#lm2 {
+  text-decoration-color: rgba(254, 120, 103, 0.3);
+}
+
+#lm2:hover {
+  text-decoration-color: rgba(254, 120, 103, 1);
+  transition: 0.3s;
+}
+
+main .row .col2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+main .row .col2 .text {
+  width: 50%;
+  gap: 2em;
+}
+
+main .row .col2 .text p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+main .row .col2 .text h1 {
+  font-size: 2rem;
+}
+
+.background {
+  height: 600px;
+}
+
+.background:nth-child(1) {
+  background-image: url("./images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.background:nth-child(2) {
+  background: url(./images/desktop/image-photography.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main .container h1 {
+  font-family: "Fraunces", serif;
+  font-size: 1.2rem;
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+main .container .testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  padding-left: 10vw;
+  padding-right: 10vw;
+  height: 45%;
+}
+
+.testimonials .client-testimonial,
+.client-testimonial .client-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials .client-testimonial img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.testimonials .client-testimonial p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: center;
+  padding: 15px;
+  line-height: 30px;
+  color: var(--very-dark-grayish-blue);
+}
+
+.client-testimonial .client-details {
+  gap: 10px;
+}
+
+.client-testimonial .client-details .client-name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.1rem;
+  color: var(--very-dark-des-blue);
+}
+
+.client-testimonial .client-details .client-ocupation {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--grayish-blue);
+}
+
+main .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+main .gallery img {
+  width: 100%;
+}
+
+footer{
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50vh;
+    background-color: #90D4C5;
+}
+
+footer h1{
+    color: var(--dark-des-cyan);
+    font-size: 2rem;
+}
+
+footer .links {
+    width: 25%;
+    font-weight: 600;
+}
+
+footer .links a{
+    text-decoration: none;
+    color: var(--dark-des-cyan);
+}
+
+footer .links a:hover{
+    color: var(--white);
+}
+
+footer .social{
+    width: 15%;
+    padding-top: 10vh;
+}
+
+footer .social svg{
+    cursor: pointer;
+    color: #2C7566;
+}
+
+footer .social svg:hover{
+    cursor: pointer;
+    color: var(--white);
+}
+
+.attribution{
+    background-color: #90D4C5;
+}
+
+
+
